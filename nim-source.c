@@ -8,17 +8,14 @@ int check_sticks(int x,int y)
 {
     if(x>y)
     {
-        printf("\n\t\t\tYou cannot pick sticks more than left ones\n\n");
-        return(1);
+        printf("\n\t\t\tYou cannot pick sticks more than left ones\n\n");   return(1);
     }
     else if(x>4||x<1)
     {
-        printf("\n\t\t\tYou can pick minimum 1 and maximum 4 sticks\n\n");
-        return(1);
+        printf("\n\t\t\tYou can pick minimum 1 and maximum 4 sticks\n\n");  return(1);
     }
     return(0);
 } 
-
 
 void user_takes()
 {
@@ -30,9 +27,7 @@ int main()
 {
     int x;
     char op;
-    
     printf("\n  ================================== Game of Nim =======================================\n\n");
-    
     printf("\t\t\t\t Enter number of Sticks : ");
     
     while(1)
