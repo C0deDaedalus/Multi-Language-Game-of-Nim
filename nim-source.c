@@ -1,4 +1,7 @@
 
+// Program - Single Heap Game of Nim
+// Coded BY - Amit Kumar, 22 May 2017
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -25,8 +28,7 @@ void user_takes()
 
 int main()
 {
-    int x;
-    char op;
+    int x; char op;
     printf("\n  ================================== Game of Nim =======================================\n\n");
     printf("\t\t\t\t Enter number of Sticks : ");
     
@@ -103,10 +105,5 @@ int main()
         }
    }
      
-    printf("\n\n  ========================( "); 
-    if(sticks==1&&turn==1) printf("Lost this Match ! Just Try Again"); 
-      else                 printf("You Won ! Computer Lost");
-    
-    printf(" )==========================\n\n");  
-    return(0);
+        return(0);
 }
