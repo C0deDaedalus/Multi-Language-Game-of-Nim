@@ -28,15 +28,44 @@
                           >  such as Modular Division is allowed only for ints not for floats.
  */
 
-int sticks,user,comp,turn;
+// Local variables - defined inside a function. Scope limited to that function only.
+// Global Variables - defined outside main() function and can be used by any function. 
 
-int check_sticks(int x,int y)
+int sticks,user,comp,turn;  // these four are defined as Global variables & are integer(whole number) type variables.
+
+/*
+   Functions are set of statements that perform a particular task.
+   Functions in C language needs to define its prototype(Decleration). THen Function definition itself.
+   
+   Prototype Decleration --->  <Return_type> <function_name> (<data_type> <parameter> ,<data_type> <parameter> , .... );
+                               Return type = data type of variable that function will return.
+                               Function name = can be anything excluding C reserved keywords.
+                               Parameters = variables that take values when function is called.
+                               
+   Function Definition -->  <Return_type> <function_name> (<data_type> <parameter> ,<data_type> <parameter> , .... )
+                              {
+                                 // statements to be executed on function call.
+                              }
+   Function Call --> <function_name> (<argument> , <argument> , . . . );
+   
+   Example : float area(float radius);     // Prototype Declaration
+             float area(float radius)      // Function Definition
+                  { float area=3.14*r*r; 
+                    return(area);
+                  }
+             area(2.5);  // Function call
+*/
+
+                               // Function Prototype Declarations as well as definition
+                               // Return type = integer
+                               // Function name = check_sticks
+int check_sticks(int x,int y)  // Parameters = x & y both ints.
 {
-    if(x>y)
+    if(x>y)   // If-else condition construct. If is executed when x>y is TRUE.
     {
         printf("\n\t\t\tYou cannot pick sticks more than left ones\n\n");   return(1);
     }
-    else if(x>4||x<1)
+    else if(x>4||x<1)  // else if part is executed if x>y is FALSE.
     {
         printf("\n\t\t\tYou can pick minimum 1 and maximum 4 sticks\n\n");  return(1);
     }
