@@ -104,6 +104,12 @@ int main()
                     break;
         }
    }
-     
+   
+    printf("\n\n  ========================( "); 
+    if(sticks==1&&turn==1) printf("Lost this Match ! Just Try Again"); 
+      else                 printf("You Won ! Computer Lost");
+    
+    printf(" )==========================\n\n");  
+
         return(0);
 }
