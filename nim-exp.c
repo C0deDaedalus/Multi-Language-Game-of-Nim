@@ -63,16 +63,38 @@ int check_sticks(int x,int y)  // Parameters = x & y both ints.
 {
     if(x>y)   // If-else condition construct. If is executed when x>y is TRUE.
     {
-        printf("\n\t\t\tYou cannot pick sticks more than left ones\n\n");   return(1);
+       // Statements to be executed when x is greater than y.
+       
+       printf("\n\t\t\tYou cannot pick sticks more than left ones\n\n");
+       // printf function just prints statements on the STDOUT.
+       // prototype & definition for scanf() & printf() functions can be found in stdio.h header file.
+       // To view this file in Linux ---> /usr/include/stdio.h
+       
+       return(1);
     }
-    else if(x>4||x<1)  // else if part is executed if x>y is FALSE.
+    else if(x>4||x<1)  // else if part is executed if x>y OR x<1 is TRUE. Double pipe stands for Logical OR operation.
     {
-        printf("\n\t\t\tYou can pick minimum 1 and maximum 4 sticks\n\n");  return(1);
+       // statements to be executed when If condition goes FALSE and else-if condition goes TRUE.
+        
+       printf("\n\t\t\tYou can pick minimum 1 and maximum 4 sticks\n\n");
+       // \n & \t are Escape Sequences.
+       // Escape Sequence are sequence of characters that are translated by compiler to some specific charactes.
+       // \ (backslash) itself is called Escape Character, & thus every escape sequence starts with a \ (backslash).
+       // Every Escape Sequence corresponds to a HEX value in ASCII.
+       // \n is used to print statements to " next line "
+       // \t is used to print statements after a " tab space "
+       
+       return(1);
     }
-    return(0);
+    
+   return(0);
+   // function check_sticks(...) at the end returns 0. An integer value as decribed in function definition.
+   // Usually return(0) means successful termination. whereas return(-1) represents Abnormal Termination.
 } 
 
-void user_takes()
+                  // void type stands for nothing to return.
+                  // Thus this function executes statements defined in it, but returns nothing at all.
+void user_takes() // A function for how many matchsticks is picked by user.
 {
     printf("\t\t\t\t\t\t    User Takes :   ");
      scanf("%3d",&user);
