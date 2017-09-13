@@ -36,19 +36,10 @@ int main()
     {
         if(scanf("%d",&x))
         {
-            if(x>=10)
-            { 
-                sticks=x;   break;
-            }
-            else
-            {
-                printf("\t\tSelect atleast 10 Sticks for a fair Play : ");
-            }
+            if(x>=10)    {   sticks=x;   break;   }
+            else         {   printf("\t\tSelect atleast 10 Sticks for a fair Play : ");  }
         }
-        else
-        {
-            printf("Invalid Input : Please enter a number\n");
-        }
+        else             {   printf("Invalid Input : Please enter a number\n");   }
     }
 
     printf("\n\t\tHow about I give you the first Shot\n\t\tPress 1 to play First or 2 for Computer : "); 
