@@ -1,20 +1,35 @@
-# Game of Nim
-  Nim is a mathematical game of strategy in which two players take turns removing objects (Matchsticks in our case) from
-  distinct heaps. On each turn, a player must remove at least one object, and may remove any number of objects provided
-  they all come from the same heap. <b>The goal of the game is to avoid being the player who must remove the last object.</b> 
 
-  Nim is typically played as a misère game, in which the player to take the last object loses. Nim can also be played as a
-  normal play game, where the player taking the last object wins. This is called normal play because the last move is a
-  winning move in most games; Nim is usually played so that the last move loses.
-  
-  The normal game is between two players and played with three heaps of any number of objects. The two players alternate
-  taking any number of objects from any single one of the heaps. The goal is to be the last to take an object. In misère
-  play, the goal is instead to ensure that the opponent is forced to take the last remaining object.
+# Multi Linguistic Game of Nim
 
-# Single Heap Nim
+So, Game of Nim is a very basic game. I've not created anything new with regard to game.
 
-  In our Case we have just a single Heap :
-  1. We start with any number of objects (Matchsticks) but minimum 10 is a fair play number.
-  2. We can chose who plays first : either You or Computer.
-  3. In one move anyone can pick 1 or 2 or 3 or 4 machsticks. So Minimum 1 & Maximum 4.
-  4. The one forced to pick last matchstick loses the game.
+Rather through this game I wish to introduce **Beginner Coders/Programmers** who are not
+sure to choose language to start with or to make as a career or juct for an hobby or fun.
+So, I created this Repository for anyone who wishes to get a sneak peek into languages.
+
+## How it would help
+
+Game of Nim will be written in as many languages as possible.
+So that For every language, a starter may know basic things such as :
+
+1. Tools - IDE, Compiler/Interpreter for Language.
+2. Header/Library/Dependancies for Language Files.
+3. Program Structure & Language Syntax.
+4. Variable Decleration & Data Types.
+5. Looping Structures.
+6. Control Structures.
+7. Functions.
+
+In this way any starter could easily find how and which language to choose for the code
+one he/she wishes to write.
+
+## Contribution
+
+You can contribute to project in one of the ways mentioned below :
+
+1. Find a language (in which you code) and write the Code.
+   Refer to [about.md file](https://github.com/elMaverick/Single-Heap-Game-of-Nim/blob/master/about.md) for the logic of Game.
+   Save the file as > nim-source.<language extension>
+   Say you created program in ruby, then name of file would be nim-source.rb
+   Create another file with name as nim-exp.<language extension> that will explain each
+   line of code, what it does in the program with the proper syntax instructions.
