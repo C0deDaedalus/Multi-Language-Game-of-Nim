@@ -30,7 +30,7 @@ You can contribute to project in one of the ways mentioned below :
 
 1. Find a language (in which you code) and write the Code.<br/>
    * Refer to [About.md file](https://github.com/elMaverick/Single-Heap-Game-of-Nim/blob/master/about.md) for the Rules of Game.<br/><br/>
-   Save your code as **nim-source.language_extension**<br/>
+   Write your code and Save it as **nim-source.language_extension**<br/>
    Create another file with name as **nim-exp.language_extension** that will explain each
    line of code, what it does in the program with the proper syntax instructions.<br/>
    Say you created this program in ruby, then name of file would be **nim-source.rb**<br/>
