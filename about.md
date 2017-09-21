@@ -1,7 +1,7 @@
 
 # Game of Nim
 
-Nim [Wikiedia]https://en.wikipedia.org/wiki/Nim is a **mathematical game of strategy** in which two players take turns removing objects (Matchsticks in our case)
+Nim [Wikiedia] https://en.wikipedia.org/wiki/Nim is a **mathematical game of strategy** in which two players take turns removing objects (Matchsticks in our case)
 from distinct heaps. On each turn, a player must remove at least one object, and may remove any number of objects
 provided they all come from the same heap. The goal of the game is to avoid being the player who must remove the
 last object.
@@ -14,7 +14,7 @@ The normal game is between two players and played with three heaps of any number
 alternate taking any number of objects from any single one of the heaps. The goal is to be the last to take an
 object. **In misère play, the goal is instead to ensure that the opponent is forced to take the last remaining object.**
 
-# Single Heap Nim
+## Single Heap Nim
 
 In our Case we have just a single Heap :
 
