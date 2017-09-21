@@ -18,7 +18,7 @@ object. In misère play, the goal is instead to ensure that the opponent is forc
 
 In our Case we have just a single Heap :
 
-We start with any number of objects (Matchsticks) but minimum 10 is a fair play number.
-We can chose who plays first : either You or Computer.
-In one move anyone can pick 1 or 2 or 3 or 4 machsticks. So Minimum 1 & Maximum 4.
-The one forced to pick last matchstick loses the game.
+ > We start with any number of objects (Matchsticks) but minimum 10 is a fair play number.
+ > We can chose who plays first : either You or Computer.
+ > In one move anyone can pick 1 or 2 or 3 or 4 machsticks. So Minimum 1 & Maximum 4.
+ > The one forced to pick last matchstick loses the game.
