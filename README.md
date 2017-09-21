@@ -28,8 +28,8 @@ written in different Languages.
 
 You can contribute to project in one of the ways mentioned below :
 
-1. Find a language (in which you code) and write the Code.<br/>
-   > Refer to [About.md file](https://github.com/elMaverick/Single-Heap-Game-of-Nim/blob/master/about.md) for the Rules of Game.<br/><br/>
+1. Find a language (in which you code) and write the Code.<br/><br/>
+   Refer to [About.md file](https://github.com/elMaverick/Single-Heap-Game-of-Nim/blob/master/about.md) for the Rules of Game.<br/><br/>
    Write your code and Save it as **nim-source.language_extension**<br/>
    Create another file with name as **nim-exp.language_extension** that will explain each
    line of code, what it does in the program with the proper syntax instructions. Say you created this program
@@ -37,6 +37,6 @@ You can contribute to project in one of the ways mentioned below :
    
 2. If program for Game of Nim in your coding Language already exists, then
    * Either try to improve the code by giving suggesstions.<br/>
-   * OR write a documentation file for the language under name nim-exp.<language extension><br/>
+   * OR write a **Documentation file** for the language under name **nim-exp.language_extension**<br/>
 
-Your Contribution will always be appreciated. Happy Coding.
+Your Contribution will always be appreciated. ***Happy Coding***
