@@ -62,6 +62,13 @@ int sticks,user,comp,turn;  // these four are defined as Global variables & are 
 int check_sticks(int x,int y)  // Parameters = x & y both ints.
 {
     if(x>y)   // If-else condition construct. If is executed when x>y is TRUE.
+              // statement/expression inside If() or else-if() are conditions.
+              // In C Language, expressions evaluating to zero ie. 0 are considered as FALSE.
+              // & expressions evaluating to any non-zero number is considered as TRUE.
+            
+              // So, if(0) , if(1+4-5) , if(NULL) are considered to be FALSE.
+              // &   if(1) , if(3-2) , if(" ") , if(' ') , if(pi=3.14) are considered as TRUE. 
+              // Assignment statements, Empty character & Empty String as a condition considered as TRUE.
     {
        // Statements to be executed when x is greater than y.
        
@@ -70,7 +77,13 @@ int check_sticks(int x,int y)  // Parameters = x & y both ints.
        // prototype & definition for scanf() & printf() functions can be found in stdio.h header file.
        // To view this file in Linux ---> /usr/include/stdio.h
        
-       return(1);
+       // Syntax --->  printf("format_specifier1,format_specifier2,.....",variable_or_expn1,variable_or_expn2,.....);
+       // Format_specifier = %[flags][width][.precision][length]specifier
+       // Understanding complete format is intermediate level task. Try it Yourself.
+       
+       // If successful, the total number of characters written is returned. On failure, a negative number is returned.       
+       
+       return(1);   // If x>y is true, then only return 1.
     }
     else if(x>4||x<1)  // else if part is executed if x>y OR x<1 is TRUE. Double pipe stands for Logical OR operation.
     {
@@ -89,23 +102,55 @@ int check_sticks(int x,int y)  // Parameters = x & y both ints.
     
    return(0);
    // function check_sticks(...) at the end returns 0. An integer value as decribed in function definition.
-   // Usually return(0) means successful termination. whereas return(-1) represents Abnormal Termination.
+   // Usually return(0) means successful termination.
+   // whereas anything else say return(1) or return(-1) represents Abnormal Termination.
 } 
 
-                  // void type stands for nothing to return.
+                  // void type stands for nothing to return or return something that has type unknown.
                   // Thus this function executes statements defined in it, but returns nothing at all.
 void user_takes() // A function for how many matchsticks is picked by user.
 {
     printf("\t\t\t\t\t\t    User Takes :   ");
-     scanf("%3d",&user);
+     scanf("%3d",&user); // Tells program to take user input & store it in variable user
+   
+   // scanf() function is used to take STDIN = standard Input from User.
+   // It's prototype & definition ;is defined in stdio.h header file.
+   // syntax of scanf is - scanf("format_specifier1,format_specifier2,.....",&variable1,&variable2,.....");
+   
+   // Character & is called "Ampersand" and " &user " means at the memory Address named "user".
+   // So, scanf("%3d",&user); means
+   // take user input as an integer, convert it to 3-digit format & store in a memory location named as user.
+   
+   // No need for return(0) statement as return type of function is void. Have a look again.
 }
 
-int main()
+int main()    // main() function = function called at program startup.
+              // Execution starts from here and main() calls other function in program.
+              // Return type is either int or void. See this - https://www.youtube.com/watch?v=c-9cdd3v3Tc   
 {
-    int x;
-    char op;
+   // In order to define a variable we need a data type & a storage class. Storage classes defines :
+   // Where the variable would be stored - in memory or CPU registers.
+   // What will be initial value of the variable.
+   // What is scope of the variable - local or global (in which functions value of variable would be available.)
+   // What is lifetime of the variable - how long would variable exist.
+   // In C we have 4 storage classes - auto, static, register, extern.
+   
+   //  CLASS    |   STORAGE   |   INITIAL VALUE   |      SCOPE       |           LIFETIME
+   // ----------|-------------|-------------------|------------------|----------------------------------------------
+   //  auto     |   Memory    |   Garbage Value   |  LOCAL to Block  |   Till control is in the block.
+   //  static   |   Memory    |     Zero = 0      |  LOCAL to Block  |   Value persists between different function calls.
+   //  register |   CPU Reg.  |   Garbage Value   |  LOCAL to Block  |   Till control is in the block.
+   //  extern   |   Memory    |     Zero = 0      |      GLOBAL      |   Till the termination of Program.
+   //-----------|-------------|-------------------|------------------|----------------------------------------------
+
+   // In C, variable has by-default "auto" storage class.
+   // Variables defined inside main() are LOCAL untill storage class is defined to be "extern".
+   
+    int x;       // x is declared to be integer variable.
+    char op;     // op is declared to be a character variable.
+   
     printf("\n  ================================== Game of Nim =======================================\n\n");
-    printf("\t\t\t\t Enter number of Sticks : ");
+    printf("\t\t\t\t Enter number of Sticks : ");   // Just printing the statements.
     
     while(1)
     {
