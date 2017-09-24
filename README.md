@@ -22,7 +22,7 @@ So that For any language, a begineer may know basic things such as :
 7. Functions.
 
 Then we could easily find how & which language to choose for coding by comparing same Program
-written in different Languages.
+written under different Languages.
 
 ## Your Contribution
 
@@ -32,8 +32,9 @@ You can contribute to project in one of the ways mentioned below :
    Refer to [About.md file](https://github.com/elMaverick/Single-Heap-Game-of-Nim/blob/master/about.md) for the Rules of Game.<br/><br/>
    Write your code and Save it as **nim-source.language_extension**<br/>
    Create another file with name as **nim-exp.language_extension** that will explain each
-   line of code, what it does in the program with the proper syntax instructions. Say you created this program
-   in ruby, then name of file would be **nim-source.rb** & explanation for the langauge will be saved as **nim-exp.rb**
+   line of code, what it does in the program with the proper syntax instructions.
+   * Say you created this program in ruby, then name of file would be **nim-source.rb**
+                      & explanation for the langauge will be saved as **nim-exp.rb**
    
 2. If program for Game of Nim in your coding Language already exists, then
    * Either try to improve the code by giving suggesstions.<br/>
