@@ -33,8 +33,9 @@ You can contribute to project in one of the ways mentioned below :
    Write your code and Save it as **nim-source.language_extension**<br/>
    Create another file with name as **nim-exp.language_extension** that will explain each
    line of code, what it does in the program with the proper syntax instructions.
-   * Say you created this program in ruby, then name of file would be **nim-source.rb**
-                      & explanation for the langauge will be saved as **nim-exp.rb**
+   
+   Say you created this program in ruby, then name of file would be **nim-source.rb**
+                    & explanation for the langauge will be saved as **nim-exp.rb**
    
 2. If program for Game of Nim in your coding Language already exists, then
    * Either try to improve the code by giving suggesstions.<br/>
