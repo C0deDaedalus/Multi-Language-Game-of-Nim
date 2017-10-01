@@ -146,12 +146,91 @@ int main()    // main() function = function called at program startup.
    // In C, variable has by-default "auto" storage class.
    // Variables defined inside main() are LOCAL untill storage class is defined to be "extern".
    
-    int x;       // x is declared to be integer variable.
+    int x;       // x is declared to be integer variable. BY default Stoage class is auto.
     char op;     // op is declared to be a character variable.
+    
+   /*  char data type variable stores only one character.
+       It cannot store a string. string = combination of characters.
+       Actually String is an Array of characters terminated by Null charcater ie. '\0'.
+       Arrays, Structures, Pointers, Unions & Enumerations are advanced topics in C Language.
+       
+       Examples of char & string -     
+                                     CHARACTERS  |  STRINGS
+                 char vowel='a';                 |             char name[6]={'J','a','m','e','s','\0'};
+                 char special_char="+";          |             char name[]="James";
+      -------------------------------------------------------------------------------------------------------------- 
+         int x;   // Declaration. x is declared as a memory space that will store data of type - " integer ".
+         x=10;    // Definition.  Here x is given a value of it's type that is 10 here.
+
+         float pi=3.14;         // Declaration + Definition.
+         char car[]="Ferrari";  // Declaration + Definition
+         int dozen=12;          // Declaration + Definition
+    */
    
     printf("\n  ================================== Game of Nim =======================================\n\n");
-    printf("\t\t\t\t Enter number of Sticks : ");   // Just printing the statements.
-    
+    printf("\t\t\t\t Enter number of Sticks : ");   // Just printing the statements after 4 tab spaces.
+   
+   /*
+      Incrementation \ Decremntation in C.
+               // Mathematically Incorrect, but In Computing it's called self-assignment.
+      x=x+2;   // First Value of x is taken then 2 s added, Now this value is assigned to x overwriting earlier value.
+               // Thus we say, x is incremented by 2.
+      y=y-7;   // Thus we say, y is decremented by 7.
+      z=z+(0.1*z); // Thus, z is incremented by 10% of itself. z must be of float type.
+      
+      x=x+1;   // Incrementation by 1 is simple called Increment.
+      x++;     // Operator ++ is used to increment vaue of a variable by 1. It's same as x=x+1;
+      x=x-1;   // Decrementation by 1 is simple called Decrement.
+      x--;     // Operator -- is used to decrement vaue of a variable by 1. It's same as x=x-1;
+               //  Only ++ & -- operator exists. There's nothing as such +++ or --- or ++++ or ----
+  
+                        Pre-Increment        Post-Increment         Pre-Decrement      Post-Decrement
+      
+      Example -
+      
+      int a=1,b=2,c=3;
+      
+      a=a+1;   // Now, a=2
+      b++;     // Now, b=3
+      c--;     // Now, c=2
+      a=b+++a; // Error
+      a=b+(++a); // 
+   */
+   /*
+      Loops - Iteration Control Statements.
+      2 types of Loop statements exist in C - Entry Controlled & Exit Controlled.
+      
+      Entry Controlled Loop - in which first condition is checked & then statements are executed If condition is TRUE.
+      Example - While(...) & If(..;..;..) Looping constructs.
+                                                  
+      --------------------------------------------|---------------------------------------------------------------                     
+                                                  |       // Code to print numbers from 1 to 10.
+         // variable initializaton.               |       x=1;
+         while(condition)                         |       while(x<=10)
+         {                                        |         {
+            // set of statements to execute.      |            printf("%d\t",x);
+            // increment/decrement statement      |            x++;
+         }                                        |         }
+       -------------------------------------------|---------------|------------------------------------------------
+                                                                  |     // Code to print numbers from 1 to 10.
+         for(initialization;condition;increment/decrement)        |     for(x=1;x<=10;x++)
+         {                                                        |     {
+            // set of statements to execute.                      |        printf("%d\t",x);
+         }                                                        |     }
+       -----------------------------------------------------------|-----------------------------------------------
+       
+       Exit Controlled Loop - in which statements are first executed and then condition is checked from next iteration.
+       Example - do while Looping Construct.
+       
+       // variable initialization             |     x=1;
+       do                                     |     do
+       {                                      |        {
+         // statements to be executed.        |             printf("%d",x);
+         // increment/decrement.              |             x++;
+       }                                      |         }
+       while(condition);                      |     while(x<=10);
+                                              |       
+   */
     while(1)
     {
         if(scanf("%d",&x))
