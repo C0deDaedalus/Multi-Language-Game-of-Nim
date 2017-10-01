@@ -1,8 +1,16 @@
 
 /* Statement beginning with a # are Preprocessor Directives that modifies our source
-   code by macro expansions and conditional compilation. Here we have used include
-   preprocessor that fetches the header files (containing necessary functions) and
-   writes to source code. */
+   code by macro expansions and conditional compilation. The preprocessor provides the
+   ability for inclusion of header files, macro expansions, conditional compilation,
+   & line control. C Preprocessor statements -
+   
+   > File Inclusion  - #include
+   > Conditoinal Compilation - #if, #ifdef, #ifndef, #else, #elif and #endif
+   > Macro Defintion & Expansion - #define, #undef
+   
+   Here we have used include preprocessor that fetches the header files
+   (containing necessary functions) and writes to source code.
+*/
 
 #include<stdio.h>
 // stdio.h = Standard Input Output Header File. Handles all I/O functions in program execution.
@@ -13,6 +21,12 @@
 // stdlib.h = Standard Library Header File.
 // Contains functions to be used for system and memory tasks such as setenv() , getenv()
 //        delay(), system() , malloc() , calloc() , free() , exit() , abort() , perror()
+
+/*
+   #include<filename.h> - file is searched for in the standard compiler include paths.
+   #include"filename.h" - the search path is expanded to include the current source directory
+                          that provides programmers ability to define where includes can be found.
+*/
 
 /* variables in C are declared using Data Types.
    Data Types - Primary (fundamental) = int , float , double , char , void.
@@ -31,7 +45,7 @@
 // Local variables - defined inside a function. Scope limited to that function only.
 // Global Variables - defined outside main() function and can be used by any function. 
 
-int sticks,user,comp,turn;  // these four are defined as Global variables & are integer(whole number) type variables.
+int sticks,user,comp,turn;  // these 4 are defined as Global variables & are integer(whole number) type variables.
 
 /*
    Functions are set of statements that perform a particular task.
@@ -171,9 +185,9 @@ int main()    // main() function = function called at program startup.
     printf("\t\t\t\t Enter number of Sticks : ");   // Just printing the statements after 4 tab spaces.
    
    /*
-      Incrementation \ Decremntation in C.
+      Incrementation \ Decrementation in C.
                // Mathematically Incorrect, but In Computing it's called self-assignment.
-      x=x+2;   // First Value of x is taken then 2 s added, Now this value is assigned to x overwriting earlier value.
+      x=x+2;   // First Value of x is taken then 2 is added, & result is assigned to x overwriting earlier value.
                // Thus we say, x is incremented by 2.
       y=y-7;   // Thus we say, y is decremented by 7.
       z=z+(0.1*z); // Thus, z is incremented by 10% of itself. z must be of float type.
@@ -184,17 +198,27 @@ int main()    // main() function = function called at program startup.
       x--;     // Operator -- is used to decrement vaue of a variable by 1. It's same as x=x-1;
                //  Only ++ & -- operator exists. There's nothing as such +++ or --- or ++++ or ----
   
-                        Pre-Increment        Post-Increment         Pre-Decrement      Post-Decrement
+      |       Pre-Increment    |      Post-Increment    |      Pre-Decrement      |     Post-Decrement      |
+      |------------------------|------------------------|-------------------------|-------------------------|
+      | First Inc. then Assign | First assign then Inc. | First Dec. then Assign  | First Assign then Dec.  |
+      |  ++ used BEFORE var.   |   ++ used AFTER var.   |   -- used BEFORE var.   |   -- used AFTER var.    |
+      |------------------------|------------------------|-------------------------|-------------------------|
+      | x=7;                   | x=7;                   | x=7;                    | x=7;                    |
+      | y=++x;  // x=8 , y=8   | y=x++;  // x=8 , y=7   | y=--x;  // x=6, y=6     | y=x--;  // x=6 , y=7    |                |
+      |________________________|________________________|_________________________|_________________________|
       
-      Example -
-      
-      int a=1,b=2,c=3;
-      
-      a=a+1;   // Now, a=2
-      b++;     // Now, b=3
-      c--;     // Now, c=2
-      a=b+++a; // Error
-      a=b+(++a); // 
+      Example - int a=1,b=2,c=3;
+                  a=a+1;      // Now, a=2
+                  b++;        // Now, b=3
+                  c--;        // Now, c=2
+                  a=b+++a;    // Error
+                  a=b+(++a);  // a = b+(preIncrement of a) = b+3 = 3+3 = 6
+                  c=b+(a--);  // c = b+(postDecrement of a) = b+6 = 3+6 = 9 , and a = 5
+                  
+                  // Try this one.
+                  b=a+--c-b++; // b = a+(preDecrement of c)-(postIncrement of b) = 5+8-3 = 10,
+                               // b = 4 first because of b++ & then b = 10 because of equation above.
+                               // Fnally a = 5 , b = 10 , c = 8.
    */
    /*
       Loops - Iteration Control Statements.
@@ -202,10 +226,11 @@ int main()    // main() function = function called at program startup.
       
       Entry Controlled Loop - in which first condition is checked & then statements are executed If condition is TRUE.
       Example - While(...) & If(..;..;..) Looping constructs.
-                                                  
-      --------------------------------------------|---------------------------------------------------------------                     
+                These can execute atleast 0 times as conditon is checked at entry point and
+                If condition evaluates to FALSE, Loop block will not be executed.
+                         
                                                   |       // Code to print numbers from 1 to 10.
-         // variable initializaton.               |       x=1;
+         // variable initializaton.               |       x=1;   // x is give initial value to be 1.
          while(condition)                         |       while(x<=10)
          {                                        |         {
             // set of statements to execute.      |            printf("%d\t",x);
@@ -214,15 +239,15 @@ int main()    // main() function = function called at program startup.
        -------------------------------------------|---------------|------------------------------------------------
                                                                   |     // Code to print numbers from 1 to 10.
          for(initialization;condition;increment/decrement)        |     for(x=1;x<=10;x++)
-         {                                                        |     {
+         {                                                        |     { 
             // set of statements to execute.                      |        printf("%d\t",x);
          }                                                        |     }
        -----------------------------------------------------------|-----------------------------------------------
        
        Exit Controlled Loop - in which statements are first executed and then condition is checked from next iteration.
-       Example - do while Looping Construct.
+       Example - do while Looping Construct. It executes atleast Once before checking condition.
        
-       // variable initialization             |     x=1;
+       // variable initialization             |     x=1;  // x is called Loop-variable / counter variable.
        do                                     |     do
        {                                      |        {
          // statements to be executed.        |             printf("%d",x);
@@ -230,6 +255,7 @@ int main()    // main() function = function called at program startup.
        }                                      |         }
        while(condition);                      |     while(x<=10);
                                               |       
+       Thus do-while condition is used where we want to execute Loop-code block atleast once.
    */
     while(1)
     {
