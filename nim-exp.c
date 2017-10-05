@@ -288,8 +288,24 @@ int main()    // main() function = function called at program startup.
     printf("\n\t\tHow about I give you the first Shot\n\t\tPress 1 to play First or 2 for Computer : "); 
      scanf("%d",&turn);
    
-   /*
-      Logical operators in C - 3 operators.
+   /* 
+      Operators - Special Charcaters or symbols that perform specfic mathematical or logical computations.
+       Operands - variables or constants on which mathematical or logical operation is done.
+       
+      Arithmetic Operators - that perform arithmetic/mathematical operations on operands.
+                           - These are
+                                 > Unary Operators  - works with only 1 operand. They are
+                                                    - Unary + , Unary - , Incrementation ++ , Decrementation --
+                                 > Binary Operators - works with 2 operands. They are 
+                                                    - Add + , Subtract - , Multiply * , Quotient / , Remainder %
+                                                    
+      Relational Operators - used for comparison of the values of two operands. They are
+                           - Less than < , Greater than >, Equal to == , Not Equal to !=
+                             Less than Equal to <= , Greater than Equal to >=
+      
+      Logical operators - They combine two or more conditions/constraints or negate the conditions.
+                        - The result of the operation of a logical operator is a boolean value either true or false.
+                        - They are && , || , !
       && - Logical AND. (double Ampersand Character)
          - It means both the conditions joined by Operator must be TRUE for the Condition to be TRUE.
       || - Logical OR. (double Pipe Character)
@@ -297,15 +313,28 @@ int main()    // main() function = function called at program startup.
       !  - Logical NOT also known as NEGATION (exclamation charcater)
          - It return the reverse operation meaning It negates the value from Zero to One & One to Zero.
          
-      if()
+       Bitwise Opearator - They perform bit-level operations on the operands.
+                         - The operands are first converted to bits & then operation is performed.
+                         - The mathematical operations such as addition , subtraction , multiplication etc.
+                         -                              can be performed at bit-level for faster processing.
+                         - They are
+                         - Bitwise AND & , Bitwise OR | , Bitwise XOR ^ , Bitwise NOT ~
+                           Bitwise Left Shift << , Bitwise Right Shift >>
+                         - Note that Bitwise Operators are very much different from Logical Operators. 
    */
    
-    while(turn!=1&&turn!=2)
+    while(turn!=1&&turn!=2) // Conditoin is actually 2 conditions joined by Logical AND &&
+          // It says Loop Untill turn is not equal to 1 and 2.
     {
         printf("\t\tPress 1 to play First or 2 for Computer : ");
+         // If User presses 1, User plays first else pressing 2 passes first chance to computer.
          scanf("%d",&turn);
     }
     
+   /*
+      printf() Precision - 
+   */
+   
     printf("\n\t---------------------------------------------------------------------\n\n");
     while(sticks>14)
     {
