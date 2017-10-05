@@ -1,5 +1,5 @@
 
-# Multi Linguistic Game of Nim
+# Multi Language Game of Nim
 
 So, Game of Nim is a very basic game. I've not created anything new with regard to game.
 
@@ -8,10 +8,12 @@ sure to choose what language to start with or to make a career in or just for ho
 So, I created this Repository for anyone who wishes to get a sneak peek into languages and
 its basic syntax and logics.
 
+You can Say, It's a kind of Notes on a Programming Langauge for Beginners. 
+
 ## How it would help
 
 Game of Nim will be written in as many languages as possible.
-So that For any language, a begineer may know basic things such as :
+So that For any language, a beginner may know basic things such as :
 
 1. Tools - IDE, Compiler/Interpreter for Language.
 2. Header/Library/Dependancies for Language Files.
@@ -21,7 +23,7 @@ So that For any language, a begineer may know basic things such as :
 6. Looping Structures.
 7. Functions.
 
-Then we could easily find how & which language to choose for coding by comparing same Program
+Then one could easily find how & which language is suitable for him/her by comparing same Program
 written under different Languages.
 
 ## Your Contribution
