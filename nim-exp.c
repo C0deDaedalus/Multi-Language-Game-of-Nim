@@ -313,6 +313,9 @@ int main()    // main() function = function called at program startup.
       !  - Logical NOT also known as NEGATION (exclamation charcater)
          - It return the reverse operation meaning It negates the value from Zero to One & One to Zero.
          
+      NOTE - If a condition has both LOgical AND & Logical OR present, then AND is first evaluated then OR.
+      Eg:    if( 1 || 1 && 0 ) reduces to if( 1 || 0 ) reduces to if( 1 ) = TRUE. 
+         
        Bitwise Opearator - They perform bit-level operations on the operands.
                          - The operands are first converted to bits & then operation is performed.
                          - The mathematical operations such as addition , subtraction , multiplication etc.
