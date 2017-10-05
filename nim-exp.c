@@ -257,27 +257,48 @@ int main()    // main() function = function called at program startup.
                                               |       
        Thus do-while condition is used where we want to execute Loop-code block atleast once.
    */
-    while(1)
+    while(1)   // 1 is non-zero thus considered TRUE.
+               // So, this while is an infinite Loop as condition is always TRUE
     {
-        if(scanf("%d",&x))
+        if(scanf("%d",&x)) // scanf(...) on successfull input returns 1.
+                           // Here If input entered is an integer(%d), scanf(...) return 1 and If executes.
+                           // If input is other than integer, scanf(...) returns 0 & else-block executes.
         {
-            if(x>=10)
+            if(x>=10)   // check whether minimum matchsticks is >= 10. If so execute If-block.
             { 
-                sticks=x;   break;
+                sticks=x;
+                break;
+                // break keyword stops normal execution of statements.
+                // When a break statement is encountered inside a loop, the loop is immediately terminated &
+                //                      the program control resumes at the next statement following the loop.
+                // It is also used to terminate a case inside switch-block statements.
             }
             else
-            {
+            {   // Error Message If matchsticks selected by User < 10.
                 printf("\t\tSelect atleast 10 Sticks for a fair Play : ");
             }
         }
         else
-        {
+        {   // This block executes when User has entered input other than integer.
             printf("Invalid Input : Please enter a number\n");
         }
     }
-
+   
+    // User is given a chance to play first OR Let the Computer play first.
     printf("\n\t\tHow about I give you the first Shot\n\t\tPress 1 to play First or 2 for Computer : "); 
      scanf("%d",&turn);
+   
+   /*
+      Logical operators in C - 3 operators.
+      && - Logical AND. (double Ampersand Character)
+         - It means both the conditions joined by Operator must be TRUE for the Condition to be TRUE.
+      || - Logical OR. (double Pipe Character)
+         - It means either of the conditions joined by Operator must be TRUE for the Condition to be TRUE.
+      !  - Logical NOT also known as NEGATION (exclamation charcater)
+         - It return the reverse operation meaning It negates the value from Zero to One & One to Zero.
+         
+      if()
+   */
    
     while(turn!=1&&turn!=2)
     {
