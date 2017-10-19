@@ -26,7 +26,7 @@ So that For any language, a beginner may know basic things such as :
 Then one could easily find how & which language is suitable for him/her by comparing same Program
 written under different Languages.
 
-## Your Contribution
+## Your [Contribution](https://github.com/C0deDaedalus/Multi-Language-Game-of-Nim/blob/master/CONTRIBUTING.md) for the Rules of Game.
 
 You can contribute to project in one of the ways mentioned below :
 
