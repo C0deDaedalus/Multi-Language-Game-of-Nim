@@ -372,30 +372,30 @@ int main()    // main() function = function called at program startup.
        length field - formats the output to be printed to a length of specified data-type.
        
        type - Tells what it is going to print in the output.
-            .-------------------------------------------------------.
-            |   type   |              what gets printed             |
-            |----------|--------------------------------------------|
-            |  %d  %i  |   int as a signed decimal number.          |
-            |  %u	     |   unsigned decimal(base 10) int.           :_ _ _ _ _ _ _ _ _ _ _ _ _ _ __
-            |  %f, %F  |   double in normal (fixed-point) notation.                                |
-            |          |   Using %f prints - (inf, infinity and nan for Infinite strings & NaN)    |
-            |          |   Using %F prints - (INF, INFINITY and NAN for Infinite strings & NaN)    |
-            |  %e, %E  |   double value in standard form ([-]d.ddd e[+/-]ddd). The exponent        |
-            |          |   always contains at least 2 digits. if value is 0, then exponent is 00   |
-            |  %g, %G  |   double in either normal or exponential notation, whichever is more      |
-            |          |   appropriate for its magnitude. g uses lower-case letters, while G uses  |
-            |          |   upper-case letters. This type differs slightly from fixed-point         |
-            |          |   notation in that insignificant zeroes to right of the decimal point     |
-            |          |   are not included. Also, decimal point is not included on whole numbers  |
-            |  %x, %X  |	unsigned int as a hexadecimal number.                                   |
-            |          |   x uses lower-case letters & X uses upper-case.                          |
-            |  %o      |	unsigned int in octal.                                                  |
-            |  %s	     |   null-terminated string. null-terminated means ending with '\0'          |
-            |  %c	     |   char (character). a single character                                    |
-            |  %a, %A  |   double in hexadecimal notation, starting with 0x or 0X.                 |
-            |  %n	     |   Prints nothing, but writes the number of characters successfully        |
-            |          |   written so far into an integer pointer parameter.                       |
-            `------------------------------------------------------------------------------------./
+            .---------------------------------------------------------------------------------------.
+            |   type   |              what gets printed                                             |
+            |----------|----------------------------------------------------------------------------|
+            |  %d  %i  |   int as a signed decimal number.                                          |
+            |  %u	     |   unsigned decimal(base 10) int.                                           |
+            |  %f, %F  |   double in normal (fixed-point) notation.                                 |
+            |          |   Using %f prints - (inf, infinity and nan for Infinite strings & NaN)     |
+            |          |   Using %F prints - (INF, INFINITY and NAN for Infinite strings & NaN)     |
+            |  %e, %E  |   double value in standard form ([-]d.ddd e[+/-]ddd). The exponent         |
+            |          |   always contains at least 2 digits. if value is 0, then exponent is 00    |
+            |  %g, %G  |   double in either normal or exponential notation, whichever is more       |
+            |          |   appropriate for its magnitude. g uses lower-case letters, while G uses   |
+            |          |   upper-case letters. This type differs slightly from fixed-point          |
+            |          |   notation in that insignificant zeroes to right of the decimal point      |
+            |          |   are not included. Also, decimal point is not included on whole numbers   |
+            |  %x, %X  |	unsigned int as a hexadecimal number.                                    |
+            |          |   x uses lower-case letters & X uses upper-case.                           |
+            |  %o      |	unsigned int in octal.                                                   |
+            |  %s	     |   null-terminated string. null-terminated means ending with '\0'           |
+            |  %c	     |   char (character). a single character                                     |
+            |  %a, %A  |   double in hexadecimal notation, starting with 0x or 0X.                  |
+            |  %n	     |   Prints nothing, but writes the number of characters successfully         |
+            |          |   written so far into an integer pointer parameter.                        |
+            `-------------------------------------------------------------------------------------./`
 */
    
     printf("\n\t---------------------------------------------------------------------\n\n");
