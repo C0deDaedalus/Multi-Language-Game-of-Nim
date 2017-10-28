@@ -5,7 +5,7 @@
    & line control. C Preprocessor statements -
    
    > File Inclusion  - #include
-   > Conditoinal Compilation - #if, #ifdef, #ifndef, #else, #elif and #endif
+   > Conditional Compilation - #if, #ifdef, #ifndef, #else, #elif and #endif
    > Macro Defintion & Expansion - #define, #undef
    
    Here we have used include preprocessor that fetches the header files
@@ -327,16 +327,76 @@ int main()    // main() function = function called at program startup.
    */
    
     while(turn!=1&&turn!=2) // Conditoin is actually 2 conditions joined by Logical AND &&
-          // It says Loop Untill turn is not equal to 1 and 2.
+          // It says Loop Untill turn is not equal to 1 as well as not equal 2.
     {
         printf("\t\tPress 1 to play First or 2 for Computer : ");
          // If User presses 1, User plays first else pressing 2 passes first chance to computer.
          scanf("%d",&turn);
     }
     
-   /*
-      printf() Precision - 
-   */
+   /* -----------------------------------------------------------------------------------------'\
+      Complete printf() function Syntax is - %[parameter][flags][width][.precision][length]type  :
+      ------------------------------------._____________________________________________________/
+      % - Conversion character that prints a literal value in it's place.
+      
+      Parameter field - It's a POSIX (C programming Standard) Extension & not used in C99 standard.
+      Flags fields - 
+         .--------------------------------------------------------------------------------------------.
+        |    Flag    |                                  what it does                                  |
+        |------------|--------------------------------------------------------------------------------|
+        |  - (minus) |  It Left-Aligns the Output. Default is Right Justified                         |       
+        |  + (plus)  |  Prefix a sign before every number. + for positive and - for negative          |
+        |            |  By default only negative numbers are precedded by minus sign.                 |
+        |   (space)  |  Prefix a space before positive numbers & - before negative numbers.           |
+        |   0 (zero) |  To be used only when width is also specified.                                 |
+        |            |  Prepends zero for numeric types.                                              |
+        |   # (hash) |  Specifies Alternate form to be used while formatting.                         |
+        |            |        .------------------------------------------------------------.          |
+        |            |        |    TYpe      |               what it does                  |          |
+        |            |        |--------------|---------------------------------------------|          |
+        |            |        | o , x , X    |   Formats text as 0 , 0x , 0X               |          |
+        |            |        |              |          Say num=4, then 4 , 0x4 , 0X4      |          |
+        |            |        | e,E,f,F,g,G  |   Output will always contain a decimal      |          |
+        |            |        |              |   point even If we no digits after decimal  |          |
+        |            |        |     g,G      |   Trailing Zeroes are not removed           |          |
+        |            |        `------------------------------------------------------------'          |
+        `---------------------------------------------------------------------------------------------'
+        
+       Width field - Specifies a minimum number of characters to output. It makes output in a table format
+                     for a specific size. If the value to be printed is shorter than this number, the
+                     result is padded with blank spaces.
+       Precision field - Specifies a maximum limit on output, depending on particular formatting type.
+                         For floats - number of digits to right to decimal that must be shown in output
+                         For String - number of chacaters that must be printed, After which
+                                      characters are truncated.
+       length field - formats the output to be printed to a length of specified data-type.
+       
+       type - Tells what it is going to print in the output.
+            .-------------------------------------------------------.
+            |   type   |              what gets printed             |
+            |----------|--------------------------------------------|
+            |  %d  %i  |   int as a signed decimal number.          |
+            |  %u	     |   unsigned decimal(base 10) int.           :_ _ _ _ _ _ _ _ _ _ _ _ _ _ __
+            |  %f, %F  |   double in normal (fixed-point) notation.                                |
+            |          |   Using %f prints - (inf, infinity and nan for Infinite strings & NaN)    |
+            |          |   Using %F prints - (INF, INFINITY and NAN for Infinite strings & NaN)    |
+            |  %e, %E  |   double value in standard form ([-]d.ddd e[+/-]ddd). The exponent        |
+            |          |   always contains at least 2 digits. if value is 0, then exponent is 00   |
+            |  %g, %G  |   double in either normal or exponential notation, whichever is more      |
+            |          |   appropriate for its magnitude. g uses lower-case letters, while G uses  |
+            |          |   upper-case letters. This type differs slightly from fixed-point         |
+            |          |   notation in that insignificant zeroes to right of the decimal point     |
+            |          |   are not included. Also, decimal point is not included on whole numbers  |
+            |  %x, %X  |	unsigned int as a hexadecimal number.                                   |
+            |          |   x uses lower-case letters & X uses upper-case.                          |
+            |  %o      |	unsigned int in octal.                                                  |
+            |  %s	     |   null-terminated string. null-terminated means ending with '\0'          |
+            |  %c	     |   char (character). a single character                                    |
+            |  %a, %A  |   double in hexadecimal notation, starting with 0x or 0X.                 |
+            |  %n	     |   Prints nothing, but writes the number of characters successfully        |
+            |          |   written so far into an integer pointer parameter.                       |
+            `------------------------------------------------------------------------------------./
+*/
    
     printf("\n\t---------------------------------------------------------------------\n\n");
     while(sticks>14)
