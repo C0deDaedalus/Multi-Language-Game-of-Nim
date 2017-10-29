@@ -1,6 +1,8 @@
 
 # Multi Language Game of Nim
 
+
+## Introduction
 So, Game of Nim is a very basic game. I've not created anything new with regard to game.
 
 Rather through this game I wish to introduce **Beginner Coders/Programmers** who are not
@@ -12,7 +14,7 @@ You can Say, It's a kind of Notes on a Programming Langauge for Beginners.
 
 ## How it would help
 
-Game of Nim will be written in as many languages as possible.
+`Game of Nim will be written in as many languages as possible`.
 So that For any language, a beginner may know basic things such as :
 
 1. Tools - IDE, Compiler/Interpreter for Language.
@@ -25,6 +27,9 @@ So that For any language, a beginner may know basic things such as :
 
 Then one could easily find how & which language is suitable for him/her by comparing same Program
 written under different Languages.
+
+## Before You Contribute
+Please note that this repository is meant to be a clean place for codestore that will help Begineers to understand the Simplicities & Complexities of languages. Please, Do not put/do anything messy or ambigous here. As a safe practice another dummy repository is being created. Fork that, add some changes to that, create a pull request, merge & save. That's kind of practice repository for you to do messy things in case you don't know how-to. All this is done in order to maintain this repository to be full of clean code pushes. I hope everyone agrees with that.
 
 ## Your [Contribution](https://github.com/C0deDaedalus/Multi-Language-Game-of-Nim/blob/master/CONTRIBUTING.md)
 
@@ -47,4 +52,5 @@ You can contribute to project in one of the ways mentioned below :
    * Either try to improve the code by giving suggesstions.<br/>
    * OR write a **Documentation file** for the language under name **nim-exp.language_extension**<br/>
 
+## Thank You
 Your Contribution will always be appreciated. ***Happy Coding***
