@@ -29,7 +29,7 @@ Then one could easily find how & which language is suitable for him/her by compa
 written under different Languages.
 
 ## Before You Contribute
-Please note that this repository is meant to be a clean place for codestore that will help Begineers to understand the Simplicities & Complexities of languages. Please, Do not put/do anything messy or ambigous here. As a safe practice another dummy repository is being created. Fork that, add some changes to that, create a pull request, merge & save. That's kind of practice repository for you to do messy things in case you don't know how-to. All this is done in order to maintain this repository to be full of clean code pushes. I hope everyone agrees with that.
+Please note that this repository is meant to be a clean place for codestore that will help Begineers to understand the Simplicities & Complexities of languages. Please, Do not put/do anything messy or ambigous here. As a safe practice another [dummy repository](https://github.com/C0deDaedalus/DummyRepo "Dummy Repository") is being created. Fork that, add some changes to that, create a pull request, merge & save. That's kind of practice repository for you to do messy things in case you don't know how-to. All this is done in order to maintain this repository to be full of clean code pushes. I hope everyone agrees with that.
 
 ## Your [Contribution](https://github.com/C0deDaedalus/Multi-Language-Game-of-Nim/blob/master/CONTRIBUTING.md)
 
