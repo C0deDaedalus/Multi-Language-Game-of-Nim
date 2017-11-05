@@ -27,7 +27,7 @@ void user_takes()
 }
 
 int main()
-{
+{   
     int x; char op;
     printf("\n  ================================== Game of Nim =======================================\n\n");
     printf("\t\t\t\t Enter number of Sticks : ");
@@ -58,7 +58,7 @@ int main()
         switch(turn)
         {
             case 2: // Computer's Turn
-                    comp=rand()%5+1;
+                    comp=rand()%4+1;
                     sticks-=comp;
                     printf("\t\tComputer Takes : %3d\n",comp);
                     turn=1;
