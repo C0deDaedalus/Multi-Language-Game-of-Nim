@@ -4,6 +4,7 @@
 
 #include<stdio.h>
 #include<stdlib.h>
+#include<time.h>
 
 int sticks,user,comp,turn;
 
@@ -28,6 +29,8 @@ void user_takes()
 
 int main()
 {   
+    srand(time(NULL));
+    
     int x; char op;
     printf("\n  ================================== Game of Nim =======================================\n\n");
     printf("\t\t\t\t Enter number of Sticks : ");
