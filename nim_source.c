@@ -34,7 +34,7 @@ int main()
     int x; char op;
     printf("\n  ================================== Game of Nim =======================================\n\n");
     printf("\t\t\t\t Enter number of Sticks : ");
-    
+    //Please handle the exception let suppose someone enter the string value then you have to show a error massege 
     while(1)
     {
         if(scanf("%d",&x))
@@ -83,7 +83,7 @@ int main()
         switch(turn)
         {
             case 2: // Computer's Turn
-                    comp=(sticks>6&&sticks<=10)?(sticks-6):(5-user);
+                    comp=(sticks>6 && sticks<=10)?(sticks-6):(5-user);
                     sticks-=comp;
                     printf("\t\tComputer Takes : %3d\n",comp);
                     turn=1;
